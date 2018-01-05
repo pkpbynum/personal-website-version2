@@ -1,6 +1,11 @@
-@import "reset";
-@import "syntax";
+@import '0-tools/bourbon/_bourbon';
+@import '0-tools/fonts';
+@import '0-tools/vars';
+@import '0-tools/base';
 
-body {
-    background: white;
-}
+@import '1-layouts/page-layout';
+
+@import '2-modules/footer';
+@import '2-modules/nav';
+
+@import '3-sections/home';
