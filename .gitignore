@@ -5,6 +5,8 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+package.json
+package-lock.json
 
 ### OSX ###
 *.DS_Store
