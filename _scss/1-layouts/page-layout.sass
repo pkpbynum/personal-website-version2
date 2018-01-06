@@ -2,8 +2,46 @@ header
   display: flex
   flex-direction: column
   justify-content: center
+  align-items: center
   position: relative
   height: 100vh
 
-  .title-wrap
-    margin-left: 40px
+.content-wrap
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 540px
+  margin-left: auto
+  margin-right: auto
+  padding: 0 20px
+
+p
+  margin-bottom: 60px
+
+  &:first-child
+    margin-top: 60px
+
+.big-letter::first-letter
+  font-size: 72px
+  line-height: 100%
+
+.body-divider
+  height: 3px
+  width: 100px
+  margin-bottom: 60px
+  background-color: $light-grey
+
+@media(max-width: 440px)
+  p
+    font-size: 12px
+    margin-bottom: 40px
+
+    &:first-child
+      margin-top: 40px
+
+  .big-letter::first-letter
+    font-size: 60px
+
+  .body-divider
+    margin-bottom: 40px
