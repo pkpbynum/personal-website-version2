@@ -1,12 +1,14 @@
 
 # Created by https://www.gitignore.io/api/osx,sass,jekyll
 
+# Other
+.publish
+package-lock.json
+package.json
 ### Jekyll ###
 _site/
 .sass-cache/
 .jekyll-metadata
-package.json
-package-lock.json
 
 ### OSX ###
 *.DS_Store

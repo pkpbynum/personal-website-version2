@@ -72,5 +72,8 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task("deploy", ["jekyll-build"], function () {
     return gulp.src("./_site/**/*")
-        .pipe(deploy());
+        .pipe(deploy({
+        branch: "master",
+        remoteUrl: "https://github.com/pkpbynum/pkpbynum.github.io"
+        }));
 });

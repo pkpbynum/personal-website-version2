@@ -54,10 +54,12 @@ ul
 // Links
 
 a
-  color: white
-  text-decoration: none
-  outline: 0
-  transition: font-size .2s ease
+  color: $dark-grey
+  text-decoration: underline
+  transition: color .2s ease
+
+  &:hover
+    color: lighten($dark-grey, 20%)
 
 
 // Basic Styles
