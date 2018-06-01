@@ -1,0 +1,26 @@
+#page-wrap
+  overflow: hidden
+  position: relative
+
+#homeBackdrop-container
+  transform: scale(1.1) translateX(0) translateY(0)
+  transition: all 0.3s ease
+  width: 100vw
+  height: 100vh
+  background:
+    image: url(../img/homeBackdrop.jpg)
+    size: cover
+
+.page-blur
+  filter: blur(2px) brightness(0.6)
+
+.img-shift-left
+  transform: scale(1.03) translateX(-80px) !important
+
+@media (max-width: 570px)
+  #homeBackdrop-container
+    background-image: url(../img/homeBackdropMobile.jpg)
+
+@media (max-width: 700px)
+  .img-shift-left
+    transform: scale(1.03) translateX(0) translateY(-80px)!important

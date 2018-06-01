@@ -35,7 +35,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
             baseDir: '_site'
         },
         notify: false,
-        browser: "google chrome"
+        browser: "safari"
     });
 });
 

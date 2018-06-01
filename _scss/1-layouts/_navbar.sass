@@ -1,0 +1,54 @@
+.navbar-container
+  position: fixed
+  top: 0
+  width: calc(100% - 60px)
+  padding: 15px 30px
+  display: flex
+
+.navbar-toggle
+  height: 30px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  transition: transform 0.3s
+  &:hover
+    cursor: pointer
+
+  .navbar-line
+    width: 35px
+    height: 2px
+    transition: background-color 0.3s ease
+    background-color: white
+
+nav
+  position: relative
+  overflow: hidden
+  margin-left: 20px
+  width: 250px
+  ul
+    transition: all 0.3s ease
+    list-style: none
+    padding-top: 3px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    li
+      color: white
+      transition: color 0.2s ease
+      &:hover
+        cursor: pointer
+        color: orange
+
+
+.nav-hidden
+  transform: translateX(-250px)
+  opacity: 0
+
+.toggle-active
+  background-color: orange !important
+
+.contact-link
+  color: white
+  text-decoration: none
+  &:hover
+    color: orange

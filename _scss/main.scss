@@ -2,3 +2,10 @@
 @import '0-tools/fonts';
 @import '0-tools/vars';
 @import '0-tools/base';
+
+@import '1-layouts/_pagelayout';
+@import '1-layouts/_navbar';
+@import '1-layouts/_sections';
+
+@import '2-sections/_bio';
+@import '2-sections/_music';
